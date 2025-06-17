@@ -10,7 +10,7 @@ export const dbConfig: sql.config = {
   server: process.env.DB_SERVER || 'localhost',
   port: 1433, 
   options: {
-    encrypt: false,
+    encrypt: true,
     trustServerCertificate: true
   },
   pool: {
